@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save react-motion-pack
+npm install --save react-css-motion-pack
 ```
 
 ## Usage
@@ -15,15 +15,36 @@ npm install --save react-motion-pack
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-motion-pack'
+import {MyComponent} from 'react-motion-pack'
 import 'react-motion-pack/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+export default function Example(){
+  return <MyComponent/>
 }
+
 ```
+
+## Components
+
+### CardReveal
+
+The `CardReveal` component displays a list of images with a 3D reveal effect on hover.
+
+#### Props
+
+- `images` (required): An array of image objects with the following properties:
+  - `src`: The source URL of the image.
+  - `width`: The width of the image.
+  - `alt`: The alt text for the image.
+- `containerStyle`: Optional CSS properties for the container.
+- `itemStyle`: Optional CSS properties for each item.
+- `imageStyle`: Optional CSS properties for each image.
+- `containerClassName`: Optional CSS class for the container.
+- `itemClassName`: Optional CSS class for each item.
+- `imageClassName`: Optional CSS class for each image.
+- `onImageClick`: Optional callback function when an image is clicked.
+
+#### Example
 
 ## License
 
